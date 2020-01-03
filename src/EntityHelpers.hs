@@ -64,10 +64,3 @@ getRandomCoord = do
     let coord = (randomCoord !! 0, randomCoord !! 1)
     return $ translateCoord coord
 
-message1 = Message {coord = ("C", "2"), result = "", next = NULL}
-message2 = Message {coord = ("A", "3"), result = "HIT", next = NULL}
-message3 = Message {coord = ("B", "6"), result = "MISS", next = NULL}
-
--- append1 = getMessageObject [message1, message2, message3]
--- append2 = mconcat [message1, message2, message3]
-

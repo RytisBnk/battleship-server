@@ -27,7 +27,6 @@ initialState :: Map String (Message, Bool)
 initialState = Map.fromList []
 
 runServer = do
-    Prelude.putStrLn "Starting server on port 3000..."
     serverState <- newTVarIO initialState
     scotty 8080 $ do
         get "/game/:gameId/player/:playerId" $ do
